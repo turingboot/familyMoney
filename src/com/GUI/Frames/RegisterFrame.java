@@ -1,9 +1,6 @@
 package com.GUI.Frames;
-
-
 import com.Service.UserService;
 import com.tools.guiUtils;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -29,7 +26,7 @@ public class RegisterFrame extends  JFrame {
 
         setTitle("欢迎注册");
         Container container = getContentPane();
-        
+
         setResizable(false);
         setBounds(600, 200, 500, 400);
         setLayout(null);
@@ -113,7 +110,7 @@ public class RegisterFrame extends  JFrame {
                 {  new JOptionPane().showMessageDialog(null, "所有项目不能为空，请重新填写"
                             , "警告", JOptionPane.WARNING_MESSAGE);}
                 else {
-                 new UserService().addUser(id, name, password, grade);
+                 new UserService().UserRegister(id, name, password, grade);
                  new JOptionPane().showMessageDialog(null, "注册成功,确认后自动跳转到登录页面"
                          , "恭喜注册成功", JOptionPane.INFORMATION_MESSAGE);
                  dispose();//关闭注册页面，
