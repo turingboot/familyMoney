@@ -7,6 +7,10 @@ public class guiUtils {
 
     private static String imageFolder = "g:/keshe/familyMoney/static";
 
+    public static Font getFont(String style,int size){
+        Font font = new Font("宋体", Font.BOLD, 25);
+        return font;
+    }
     public static void setImageIcon(JMenu b,String filename,String tip) {
         ImageIcon i = new ImageIcon(new File(imageFolder, filename).getAbsolutePath());
         b.setIcon(i);
@@ -19,7 +23,7 @@ public class guiUtils {
     public  static void SetUI(){
 
         try {
-            UIManager.setLookAndFeel("com.birosoft.liquid.LiquidLookAndFeel");
+            UIManager.setLookAndFeel("com.jtattoo.plaf.hifi.HiFiLookAndFeel");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {

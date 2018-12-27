@@ -33,9 +33,9 @@ public  class LoginFrame extends JFrame {
         setBounds(600, 200, 500, 400);
         setLayout(null);
 
-        Font font = new Font("宋体", Font.BOLD, 25);
+
         titleLable.setText("家庭财务管理系统");
-        titleLable.setFont(font);
+        titleLable.setFont(guiUtils.getFont("宋体",25));//com.tools.guiUtils
 
         idLable.setText("账号");
         passwordLable.setText("密码");
@@ -91,13 +91,12 @@ public  class LoginFrame extends JFrame {
     }
 
 
-    class LoginButtonListener implements ActionListener {
+    class LoginButtonListener implements ActionListener { //登录按钮监听器
         @Override
         public void actionPerformed(ActionEvent e) {
             String id = idTextFilede.getText();
             String password = new String(inputPasswordLable.getPassword());
             String MD5 = MD5Utils.toMd5(password);
-            System.out.println(MD5);
             if (id.equals(" ") || password.equals(""))
                 new JOptionPane().showMessageDialog(null, "用户名或密码不能为空"
                         , "警告", JOptionPane.WARNING_MESSAGE);

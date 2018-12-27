@@ -18,7 +18,6 @@ public class UserService {
 
     public boolean UserLogin(String id,String password){
 
-         System.out.println("Service:"+userDAO.selectPassword(id));
           if(userDAO.selectPassword(id).equals(password))
               return true;
 
