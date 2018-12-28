@@ -42,7 +42,13 @@ public class UserService {
 
     }
 
+   public boolean updatePSW(String id,String psw){
+        if (userDAO.updatePSW(id,psw))
+            return true;
+        else
+            return false;
 
+   }
 
 }
 

@@ -45,6 +45,9 @@ public class ResetPanel extends JPanel {
         for (Component c : cs) {
             remove(c);
         }
+
+        if (p instanceof WorkingPanel)
+            ((WorkingPanel) p).updateData();
         add(p);
         this.updateUI();
     }

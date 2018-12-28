@@ -5,6 +5,7 @@ package com.Entity;
      private String consumeID;
      private String consumeName;
 
+     public Consume(){}
 
      public Consume(String consumeID, String consumeName) {
          this.consumeID = consumeID;

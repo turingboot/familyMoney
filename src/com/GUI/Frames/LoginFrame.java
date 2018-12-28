@@ -32,9 +32,9 @@ public  class LoginFrame extends JFrame {
         Container container = getContentPane();
 
         setResizable(false);
-        setBounds(600, 200, 500, 400);
+        setSize(500, 400);
         setLayout(null);
-
+        setLocationRelativeTo(null);//主窗口居中显示
 
         titleLable.setText("家庭财务管理系统");
         titleLable.setFont(guiUtils.getFont("宋体",25));//com.tools.guiUtils

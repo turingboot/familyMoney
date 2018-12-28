@@ -28,7 +28,8 @@ public class RegisterFrame extends  JFrame {
         Container container = getContentPane();
 
         setResizable(false);
-        setBounds(600, 200, 500, 400);
+        setSize(500, 400);
+        setLocationRelativeTo(null);//主窗口居中显示
         setLayout(null);
 
         nameLable.setText("用户名");

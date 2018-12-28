@@ -26,14 +26,8 @@ public class MainPanel extends WorkingPanel {
     public   JMenuItem addPersonalInfor = new JMenuItem("信息变更");//子菜单
     public   JMenuItem modifyPassword = new JMenuItem("修改密码");
 
-    public   JMenuItem addIncomeKind = new JMenuItem("添加收入分类");//
-    public   JMenuItem modifyIncomeKind = new JMenuItem("修改收入分类");
-    public   JMenuItem deleteIncomeKind = new JMenuItem("删除收入分类");
-
-    public   JMenuItem addConsumeKind = new JMenuItem("添加支出分类");//
-    public   JMenuItem modifyConsumeKind = new JMenuItem("修改支出分类");
-    public   JMenuItem deleteConsumeKinds = new JMenuItem("删除支出分类");
-
+    public   JMenuItem manageIncome = new JMenuItem("开始管理收入分类");
+    public   JMenuItem manageConsume = new JMenuItem("开始管理消费分类");
     public  static JPanel workingPanel ; //工作面板区
 
 
@@ -42,7 +36,6 @@ public class MainPanel extends WorkingPanel {
         DesignJmenuBar();
         this.setLayout(new BorderLayout());
         workingPanel = new ResetPanel(0.8);
-
         this.add(jMenuBar,BorderLayout.NORTH);
         this.add(workingPanel,BorderLayout.CENTER);
         addListener();
@@ -52,13 +45,12 @@ public class MainPanel extends WorkingPanel {
 
     private void DesignJmenuBar(){
         jMenuBar.setPreferredSize(new Dimension(-1, 50));
-        jMenuBar.add(managePersonInforMenu); //设置各个菜单项目
+        jMenuBar.add(managePersonInforMenu); //设置各个菜单项目添加进菜单栏
         jMenuBar.add(manageIncomeKindMenu);
         jMenuBar.add(manageConsumeKindMenu);
         jMenuBar.add(manageIncomeMenu);
         jMenuBar.add(manageConsumeMenu);
         jMenuBar.add(incomeAndcomsumeViewMenu);
-
 
         //个人信息管理菜单项子菜单
         managePersonInforMenu.add(addPersonalInfor);
@@ -66,38 +58,27 @@ public class MainPanel extends WorkingPanel {
         managePersonInforMenu.add(modifyPassword);
         modifyPassword.setPreferredSize(new Dimension(95,30));
 
-
-        //收入分类管理子菜单
-
-        manageIncomeKindMenu.add(addIncomeKind);
-        manageIncomeKindMenu.add(modifyIncomeKind);
-        manageIncomeKindMenu.add(deleteIncomeKind);
-
-        //消费分类管理子菜单
-        manageConsumeKindMenu.add(addConsumeKind);
-        manageConsumeKindMenu.add(modifyConsumeKind);
-        manageConsumeKindMenu.add(deleteConsumeKinds);
-
-        //添加收入
-
-
-
-
-
-        //添加支出
-
-
+        //
+        manageIncomeKindMenu.add(manageIncome);
+        manageConsumeKindMenu.add(manageConsume);
 
     }
-
 
 
     @Override
     public void addListener() {
         MainPanelListener mainPanelListener = new MainPanelListener();
-        addPersonalInfor.addActionListener(mainPanelListener);
-        modifyPassword.addActionListener(mainPanelListener);
+        addPersonalInfor.addActionListener(mainPanelListener);//
+        modifyPassword.addActionListener(mainPanelListener);//
+        manageIncome.addActionListener(mainPanelListener);
+        manageConsume.addActionListener(mainPanelListener);
 
     }
+
+    @Override
+    public void updateData() {
+
+    }
+
 
 }

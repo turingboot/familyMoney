@@ -63,11 +63,24 @@ public class UserDAO {
      return isUpadte;
     }
 
+    public boolean updatePSW(String id,String psw){
+        boolean isUpadte = false;
+        String sql = String.format("UPDATE user SET UserPassword='%s' WHERE  UserID = %s",toMd5(psw),id);
+        System.out.println(sql);
+        try (Connection c = JDBCUtils.getConnection(); Statement s = c.createStatement()) {
+            s.execute(sql);
+            isUpadte = true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return isUpadte;
+        }
+        return isUpadte;
+    }
+
 
     public static void main(String[] args){
          User user = new User("zhang","22.com","man","stu");
-        if(new UserDAO().updateUser("5",user));
-          System.out.println("successful");
+        if(new UserDAO().updatePSW("5","3333"));
 
 
     }

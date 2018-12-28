@@ -39,7 +39,7 @@ public class updatePersonInforPanel extends WorkingPanel {
          jPanel.add(nameLable);
          jPanel.add(nameTextField);
 
-         if(!MainPanel.whologin.equals(""))
+         if((null!=MainPanel.INSTANCE)&&(!MainPanel.whologin.equals("")))
          { String name = new UserService().getExitsName(MainPanel.whologin);//获取当前登录者的部分信息
           nameTextField.setText(name);}
 
@@ -58,5 +58,8 @@ public class updatePersonInforPanel extends WorkingPanel {
 
     }
 
+    @Override
+    public void updateData() {
 
+    }
 }
