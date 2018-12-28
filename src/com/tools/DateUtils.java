@@ -17,10 +17,6 @@ public class DateUtils {
         return calendar.getTime();
     }
 
-public static void  main(String[] args){
-        System.out.print(DateUtils.today());
-
-}
 
 }
 

@@ -3,16 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="4ca94b10-f27c-4673-9eda-9dd053b17147" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/familyMoney.iml" beforeDir="false" afterPath="$PROJECT_DIR$/familyMoney.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/familyMoney/com/DAO/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/Entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/familyMoney/com/Entity/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Frames/LoginFrame$LoginButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Frames/LoginFrame$LoginButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Frames/LoginFrame$LoginFrameRBListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Frames/LoginFrame$LoginFrameRBListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Frames/LoginFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Frames/LoginFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Frames/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Frames/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Listener/MainPanelListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Listener/MainPanelListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Panel/AddPersonInforPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Panel/MainPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Panel/MainPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/GUI/Panel/ResetPanels.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/familyMoney/com/Service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/tools/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/familyMoney/com/tools/DateUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/tools/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/familyMoney/com/tools/JDBCUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/familyMoney/com/tools/guiUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/familyMoney/com/tools/guiUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DAO/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/GUI/Frames/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/GUI/Frames/LoginFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/GUI/Frames/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/GUI/Frames/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/GUI/Panel/AddPersonInforPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/GUI/Panel/AddPersonInforPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/GUI/Listener/MainPanelListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/GUI/Listener/MainPanelListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/GUI/Panel/AddPersonInforPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/GUI/Panel/updatePersonInforPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/GUI/Panel/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/GUI/Panel/MainPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/GUI/Panel/ResetPanels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/GUI/Panel/ResetPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tools/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tools/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tools/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tools/JDBCUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tools/guiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tools/guiUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -51,43 +66,50 @@
     <session id="1009483994">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="93" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="142" />
+          <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="93" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="142" />
+          <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="78" />
-          <entry key="java" value="13795" />
+          <entry key="dummy" value="101" />
+          <entry key="java" value="16396" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13795" />
-          <entry key="PLAIN_TEXT" value="83" />
+          <entry key="JAVA" value="16395" />
+          <entry key="PLAIN_TEXT" value="106" />
+          <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -98,10 +120,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/AddPersonInforPanel.java">
+        <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/updatePasswordPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+            <state relative-caret-position="558">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,22 +132,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/GUI/Frames/MainFrame.java">
+        <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/updatePersonInforPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/MainPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="815">
-              <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+            <state relative-caret-position="-540">
+              <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,8 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/GUI/Listener/MainPanelListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+            <state relative-caret-position="247">
+              <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,19 +156,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/WorkingPanel.java">
+        <entry file="file://$PROJECT_DIR$/src/com/GUI/Listener/updateInforListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            <state relative-caret-position="216">
+              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/GUI/Frames/LoginFrame.java">
+        <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/ResetPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="98" column="50" selection-start-line="98" selection-start-column="50" selection-end-line="98" selection-end-column="50" />
+            <state relative-caret-position="257">
+              <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/MainPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,20 +194,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tools/guiUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/ResetPanels.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+            <state relative-caret-position="990">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -193,7 +206,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/GUI/Frames/RegisterFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="-1224">
               <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -203,10 +216,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Service/UserService.java">
+        <entry file="file://$PROJECT_DIR$/src/com/GUI/Frames/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="142">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/GUI/Frames/LoginFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="127" column="1" lean-forward="true" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -241,26 +266,30 @@
         <option value="$PROJECT_DIR$/src/com/Entity/UserInformation.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Listener/RegisterListener.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Listener/RegisterCommitListener.java" />
-        <option value="$PROJECT_DIR$/src/com/tools/DateUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/Entity/User.java" />
         <option value="$PROJECT_DIR$/src/com/tools/MD5Utils.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Listener/BackToLoginListener.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Listener/LoginFrameRBListener.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Listener/ToolBarListener.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Frames/RegisterFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/tools/JDBCUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/DAO/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Panel/workingPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/GUI/Frames/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Panel/CenterPanel.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Panel/ResetPanels.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Panel/WorkingPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/GUI/Listener/MainPanelListener.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Frames/LoginFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/Service/UserService.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Panel/AddPersonInforPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/GUI/Panel/updatePersonInforPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/tools/DateUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/tools/JDBCUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/Service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/com/GUI/Listener/updateInforListener.java" />
+        <option value="$PROJECT_DIR$/src/com/DAO/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/Entity/User.java" />
+        <option value="$PROJECT_DIR$/src/com/GUI/Frames/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/GUI/Panel/updatePasswordPanel.java" />
         <option value="$PROJECT_DIR$/src/com/tools/guiUtils.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/Panel/MainPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/GUI/Listener/MainPanelListener.java" />
+        <option value="$PROJECT_DIR$/src/com/GUI/Panel/ResetPanel.java" />
       </list>
     </option>
   </component>
@@ -284,6 +313,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -301,13 +331,6 @@
               <item name="familyMoney" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="familyMoney" type="b2602c69:ProjectViewProjectNode" />
-              <item name="familyMoney" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="familyMoney" type="b2602c69:ProjectViewProjectNode" />
@@ -358,18 +381,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545910122167" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/JTattoo.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545964296527" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -387,19 +409,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.LoginFrame (1)">
-    <configuration name="AddPersonInforPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.GUI.Panel.AddPersonInforPanel" />
-      <module name="familyMoney" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.GUI.Panel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginFrame (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.GUI.Frames.LoginFrame" />
       <module name="familyMoney" />
@@ -426,8 +435,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResetPanels" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.GUI.Panel.ResetPanels" />
+    <configuration name="ResetPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.GUI.Panel.ResetPanel" />
       <module name="familyMoney" />
       <extension name="coverage">
         <pattern>
@@ -452,20 +461,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="updatePersonInforPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.GUI.Panel.updatePersonInforPanel" />
+      <module name="familyMoney" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.GUI.Panel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.LoginFrame (1)" />
       <item itemvalue="Application.MainFrame" />
       <item itemvalue="Application.UserDAO" />
       <item itemvalue="Application.ResetPanels" />
-      <item itemvalue="Application.AddPersonInforPanel" />
+      <item itemvalue="Application.updatePersonInforPanel" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.LoginFrame (1)" />
         <item itemvalue="Application.MainFrame" />
-        <item itemvalue="Application.AddPersonInforPanel" />
-        <item itemvalue="Application.ResetPanels" />
         <item itemvalue="Application.UserDAO" />
+        <item itemvalue="Application.updatePersonInforPanel" />
+        <item itemvalue="Application.ResetPanels" />
       </list>
     </recent_temporary>
   </component>
@@ -491,6 +513,9 @@
       <workItem from="1545882293607" duration="17343000" />
       <workItem from="1545904629841" duration="275000" />
       <workItem from="1545907124295" duration="2861000" />
+      <workItem from="1545911986664" duration="9045000" />
+      <workItem from="1545955654146" duration="468000" />
+      <workItem from="1545958106402" duration="6181000" />
     </task>
     <task id="LOCAL-00001" summary="11-27">
       <created>1545881162503</created>
@@ -503,10 +528,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78423000" />
+    <option name="totallyTimeSpent" value="94117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -514,11 +540,11 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Structure" order="4" sideWeight="0.5023112" side_tool="true" weight="0.28517398" />
       <window_info id="Favorites" order="5" sideWeight="0.5011442" side_tool="true" weight="0.17473525" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49768874" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49768874" visible="true" weight="0.2246596" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32049307" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39820743" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2650231" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39753467" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -526,7 +552,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32522407" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32511556" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -598,58 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tools/DateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tools/JDBCUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tools/MD5Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/DAO/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Entity/Consume.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Entity/ConsumeRecorder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../hutubill/src/gui/listener/CategoryListener.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -663,13 +637,71 @@
     <entry file="file://$PROJECT_DIR$/../hutubill/src/gui/frame/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/课设数据库设计.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/familyMoney.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Entity/ConsumeRecorder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="216">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Entity/Consume.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/DAO/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tools/MD5Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tools/JDBCUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tools/DateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="36" column="60" lean-forward="true" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -680,40 +712,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/ResetPanels.java">
+    <entry file="file://$PROJECT_DIR$/src/com/GUI/Frames/LoginFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/GUI/Listener/MainPanelListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/AddPersonInforPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/GUI/Frames/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="415">
+          <caret line="127" column="1" lean-forward="true" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -722,7 +724,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/GUI/Frames/RegisterFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="-1224">
           <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -730,10 +732,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/MainPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/com/GUI/Listener/updateInforListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+        <state relative-caret-position="216">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/updatePasswordPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/GUI/Frames/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -742,18 +764,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tools/guiUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+        <state relative-caret-position="990">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/GUI/Frames/LoginFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/MainPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="98" column="50" selection-start-line="98" selection-start-column="50" selection-end-line="98" selection-end-column="50" />
+        <state relative-caret-position="155">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/GUI/Listener/MainPanelListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/updatePersonInforPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/GUI/Panel/ResetPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -766,10 +818,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>swing</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

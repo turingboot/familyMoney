@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import com.GUI.Panel.MainPanel;
 import com.Service.UserService;
 import com.tools.MD5Utils;
 import com.tools.guiUtils;
@@ -105,6 +107,7 @@ public  class LoginFrame extends JFrame {
 
                 if (new UserService().UserLogin(id,MD5)) {
                     new MainFrame();//跳转到主功能页面
+                    MainPanel.whologin = id; //保存登录者ID
                     dispose();//关闭登录页面
                 }
 

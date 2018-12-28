@@ -5,13 +5,15 @@ import com.tools.guiUtils;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyEvent;
 
 public class MainPanel extends WorkingPanel {
     static {
         guiUtils.SetUI();
+      //  guiUtils.initAllPanels();
+
     }
     public static MainPanel INSTANCE = new MainPanel();
+    public static String whologin ;
 
     public JMenuBar jMenuBar = new JMenuBar();
     public   JMenu managePersonInforMenu = new JMenu("个人信息管理");//菜单栏
@@ -21,8 +23,8 @@ public class MainPanel extends WorkingPanel {
     public   JMenu manageConsumeMenu = new JMenu("支出管理");
     public   JMenu incomeAndcomsumeViewMenu = new JMenu("财务状况");
 
-    public   JMenuItem addPersonalInfor = new JMenuItem("添加信息");//子菜单
-    public   JMenuItem modifyPersonalInfor = new JMenuItem("修改信息");
+    public   JMenuItem addPersonalInfor = new JMenuItem("信息变更");//子菜单
+    public   JMenuItem modifyPassword = new JMenuItem("修改密码");
 
     public   JMenuItem addIncomeKind = new JMenuItem("添加收入分类");//
     public   JMenuItem modifyIncomeKind = new JMenuItem("修改收入分类");
@@ -37,10 +39,10 @@ public class MainPanel extends WorkingPanel {
 
 
     public  MainPanel(){
-
         DesignJmenuBar();
         this.setLayout(new BorderLayout());
-        workingPanel = new ResetPanels(0.8);
+        workingPanel = new ResetPanel(0.8);
+
         this.add(jMenuBar,BorderLayout.NORTH);
         this.add(workingPanel,BorderLayout.CENTER);
         addListener();
@@ -61,8 +63,8 @@ public class MainPanel extends WorkingPanel {
         //个人信息管理菜单项子菜单
         managePersonInforMenu.add(addPersonalInfor);
         addPersonalInfor.setPreferredSize(new Dimension(95,30));//调整子菜单项的大小
-        managePersonInforMenu.add(modifyPersonalInfor);
-        modifyPersonalInfor.setPreferredSize(new Dimension(95,30));
+        managePersonInforMenu.add(modifyPassword);
+        modifyPassword.setPreferredSize(new Dimension(95,30));
 
 
         //收入分类管理子菜单
@@ -94,6 +96,8 @@ public class MainPanel extends WorkingPanel {
     public void addListener() {
         MainPanelListener mainPanelListener = new MainPanelListener();
         addPersonalInfor.addActionListener(mainPanelListener);
+        modifyPassword.addActionListener(mainPanelListener);
 
     }
+
 }

@@ -11,6 +11,8 @@ import static com.tools.MD5Utils.toMd5;
 
 public class UserDAO {
 
+
+
     public void add(User user) {
 
         String sql = "INSERT INTO user(userID,userName,userPassword,userGrade)  VALUES(?,?,?,?)";
@@ -28,27 +30,47 @@ public class UserDAO {
     }
 
 
-    public String selectPassword(String id) {
-        String password = "";
-        String sql = String.format("SELECT UserID,UserPassword FROM user WHERE UserID = %s", id);
+    public String selectInfor(String id,String sign) {
+        String str = "";
+        String sql = String.format("SELECT UserID,%s FROM user WHERE UserID = %s",sign,id);
         try (Connection c = JDBCUtils.getConnection(); Statement s = c.createStatement()) {
 
             ResultSet rs = s.executeQuery(sql);
-            if (rs.next())//如果查询出对应ID的密码
-               password = rs.getString("UserPassword");
+            if (rs.next())
+               str = rs.getString(sign);
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return password;
+        return str;
+    }
+
+    public boolean updateUser(String id,User user){
+        boolean isUpadte = false;
+        String sql = String.format("UPDATE user SET UserName=?,UserEmail=?,UserSex=?,UserJob=? WHERE  UserID = %s",id);
+        System.out.println(sql);
+        try (Connection c = JDBCUtils.getConnection(); PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setString(1, user.getUserName());
+            ps.setString(2, user.getUserEmail());
+            ps.setString(3, user.getUserSex());
+            ps.setString(4, user.getUserJob());
+            ps.execute();
+            isUpadte = true;
+        } catch (SQLException e) {
+           e.printStackTrace();
+            return isUpadte;
+        }
+     return isUpadte;
     }
 
 
+    public static void main(String[] args){
+         User user = new User("zhang","22.com","man","stu");
+        if(new UserDAO().updateUser("5",user));
+          System.out.println("successful");
 
 
-
-    public static  void main(String[] args){
-        System.out.println(new UserDAO().selectPassword("55555"));
     }
+
 }
 

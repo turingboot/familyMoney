@@ -17,6 +17,13 @@ public class User {
          this.userGrade = userGrade;
      }
 
+     public User(String userName,String userEmail,String userSex,String userJob){
+         this.userName=userName;
+         this.userEmail=userEmail;
+         this.userSex=userSex;
+         this.userJob=userJob;
+     }
+
      public String getUserID() {
          return userID;
      }

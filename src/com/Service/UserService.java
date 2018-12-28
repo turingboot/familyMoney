@@ -2,7 +2,7 @@ package com.Service;
 
 import com.DAO.UserDAO;
 import com.Entity.User;
-import com.tools.MD5Utils;
+
 
 public class UserService {
 
@@ -18,7 +18,7 @@ public class UserService {
 
     public boolean UserLogin(String id,String password){
 
-          if(userDAO.selectPassword(id).equals(password))
+          if(userDAO.selectInfor(id,"UserPassword").equals(password))
               return true;
 
           else
@@ -27,6 +27,20 @@ public class UserService {
     }
 
 
+    public String getExitsName(String id){
+
+        return userDAO.selectInfor(id,"UserName");
+
+    }
+
+    public boolean updateInfor(String id,String username,String useremail,String usersex,String userjob){
+        User user = new User(username,useremail,usersex,userjob);
+        if(userDAO.updateUser(id,user))
+           return true;
+        else
+            return false;
+
+    }
 
 
 

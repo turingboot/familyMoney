@@ -5,21 +5,21 @@ import java.awt.Dimension;
 import javax.swing.JComponent;
 
 import javax.swing.JPanel;
+import java.awt.Component;
 
-
-public class ResetPanels extends JPanel {
+public class ResetPanel extends JPanel {
 
     private double rate;// 拉伸比例
     private JComponent c; // 显示的组件
     private boolean strech; // 是否拉伸
 
-    public ResetPanels(double rate, boolean strech) {
+    public ResetPanel(double rate, boolean strech) {
         this.setLayout(null);
         this.rate = rate;
         this.strech = strech;
     }
 
-    public ResetPanels(double rate) {
+    public ResetPanel(double rate) {
         this(rate, true);
     }
 
@@ -41,6 +41,10 @@ public class ResetPanels extends JPanel {
 
     public void show(JComponent p) {
         this.c = p;
+        Component[] cs = getComponents();
+        for (Component c : cs) {
+            remove(c);
+        }
         add(p);
         this.updateUI();
     }

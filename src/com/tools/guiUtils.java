@@ -1,4 +1,7 @@
 package com.tools;
+import com.GUI.Panel.updatePasswordPanel;
+import com.GUI.Panel.updatePersonInforPanel;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
@@ -36,5 +39,19 @@ public class guiUtils {
 
 
     }
+
+    public static boolean isNull(String str){
+        if(str.equals(""))
+             return true;
+        else
+            return false;
+    }
+
+    public static void initAllPanels(){
+        updatePersonInforPanel updatePersonInforPanel = com.GUI.Panel.updatePersonInforPanel.INSTANCE;
+        updatePasswordPanel updatePasswordPanel = com.GUI.Panel.updatePasswordPanel.INSTANCE;
+
+    }
+
 
 }
