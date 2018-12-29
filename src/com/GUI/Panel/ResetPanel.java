@@ -1,12 +1,13 @@
 package com.GUI.Panel;
 
 import java.awt.Dimension;
-
 import javax.swing.JComponent;
-
 import javax.swing.JPanel;
 import java.awt.Component;
 
+/*
+   用于将各个工作面板重绘组件大小的面板
+ */
 public class ResetPanel extends JPanel {
 
     private double rate;// 拉伸比例
@@ -23,7 +24,7 @@ public class ResetPanel extends JPanel {
         this(rate, true);
     }
 
-    public void repaint() {
+    public void repaint() { //重绘组件的大小
         if (null != c) {
             Dimension containerSize = this.getSize();
             Dimension componentSize = c.getPreferredSize();
@@ -46,8 +47,9 @@ public class ResetPanel extends JPanel {
             remove(c);
         }
 
-        if (p instanceof WorkingPanel)
+        if (p instanceof WorkingPanel) //属于WorkingPanel的子类都执行更新数据操作
             ((WorkingPanel) p).updateData();
+
         add(p);
         this.updateUI();
     }

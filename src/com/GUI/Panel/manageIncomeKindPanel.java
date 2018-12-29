@@ -4,7 +4,7 @@ import javax.swing.*;
 
 import com.Entity.Income;
 import com.tools.guiUtils;
-import com.GUI.Models.IncomTables;
+import com.GUI.Models.IncomTableModels;
 import com.Service.IncomeService;
 import com.GUI.Listener.incomekindListener;
 public class manageIncomeKindPanel extends WorkingPanel { //收入分类管理工作面板
@@ -21,7 +21,7 @@ public class manageIncomeKindPanel extends WorkingPanel { //收入分类管理�
     public JButton bDelete = new JButton("删除");
  //   String columNames[] = new String[]{"分类名称", "消费次数"};
 
-    public IncomTables incomTables = new IncomTables();//JTables模型用于管理JTables的数据
+    public IncomTableModels incomTables = new IncomTableModels();//JTables模型用于管理JTables的数据
 
     public JTable table = new JTable(incomTables);//用模型去注册表格
 

@@ -1,20 +1,13 @@
 package com.DAO;
 
+import java.sql.*;
 import com.Entity.User;
 import com.tools.JDBCUtils;
-
-
-import java.sql.*;
-
 import static com.tools.MD5Utils.toMd5;
-
 
 public class UserDAO {
 
-
-
     public void add(User user) {
-
         String sql = "INSERT INTO user(userID,userName,userPassword,userGrade)  VALUES(?,?,?,?)";
         try (Connection c = JDBCUtils.getConnection(); PreparedStatement ps = c.prepareStatement(sql);) {
             ps.setString(1, user.getUserID());
@@ -25,8 +18,6 @@ public class UserDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
     }
 
 

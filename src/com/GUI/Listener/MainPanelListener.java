@@ -32,6 +32,19 @@ public class MainPanelListener  implements ActionListener {
             System.out.println("已经进入消费分类管理页面");//消费分类管理面板
             ((ResetPanel) m.workingPanel).show(manageConsumeKindPanel.INSTANCE);
         }
+
+        if (menuItem == m.setAincome) {
+            System.out.println("已经进入记录收入页面");//消费分类管理面板
+            ((ResetPanel) m.workingPanel).show(setIncomePanel.INSTANCE);
+        }
+
+        if (menuItem == m.setAconsume) {
+            System.out.println("已经进入记录支出页面");//消费分类管理面板
+            ((ResetPanel) m.workingPanel).show(setConsumePanel.INSTANCE);
+        }
+
+
+
     }
 }
 

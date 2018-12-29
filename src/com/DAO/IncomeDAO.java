@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.sql.*;
 public class IncomeDAO {
 
-
     public List<Income> list() {
         List<Income> incomes = new ArrayList<Income>();
 
@@ -32,6 +31,5 @@ public class IncomeDAO {
         }
         return incomes;
     }
-
 
 }

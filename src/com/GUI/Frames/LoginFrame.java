@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import com.GUI.Panel.MainPanel;
 import com.Service.UserService;
 import com.tools.MD5Utils;
@@ -16,7 +15,6 @@ public  class LoginFrame extends JFrame {
         guiUtils.SetUI();
     }
 
-
     public JLabel titleLable = new JLabel();
     public JLabel idLable = new JLabel();
     public JLabel passwordLable = new JLabel();
@@ -24,7 +22,6 @@ public  class LoginFrame extends JFrame {
     public JTextField idTextFilede = new JTextField();
     public JButton loginButton = new JButton();
     public JButton registerButton = new JButton();
-
 
     public LoginFrame() {
 
@@ -92,7 +89,6 @@ public  class LoginFrame extends JFrame {
 
     }
 
-
     class LoginButtonListener implements ActionListener { //登录按钮监听器
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -118,7 +114,6 @@ public  class LoginFrame extends JFrame {
         }
 
     }
-
 
    public  static  void main(String[] args)
    {

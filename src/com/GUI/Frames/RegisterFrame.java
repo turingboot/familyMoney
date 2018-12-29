@@ -101,9 +101,6 @@ public class RegisterFrame extends  JFrame {
             String password = new String(inputPasswordLable.getPassword());
             int grade = 1;
 
-
-
-
                 if (name.length() > 12 || id.length() > 10 || password.length() > 16)
                 { new JOptionPane().showMessageDialog(null, "用户名不超过12位,账户不超过10位,密码不超过16位"
                             , "警告", JOptionPane.WARNING_MESSAGE);}

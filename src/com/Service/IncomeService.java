@@ -2,9 +2,7 @@ package com.Service;
 
 import com.DAO.IncomeDAO;
 import com.Entity.Income;
-import com.Entity.IncomeRecorder;
-
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
 public class IncomeService {
@@ -15,4 +13,12 @@ public class IncomeService {
         return cs;
     }
 
+    public List<String> listName(){
+        List<Income> cs = new IncomeDAO().list();
+        List<String> list = new ArrayList<>();
+        for (Income c:cs){
+            list.add(c.getIncomeName());
+        }
+        return list;
+    }
 }

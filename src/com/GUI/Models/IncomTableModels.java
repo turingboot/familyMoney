@@ -7,7 +7,7 @@ import com.Service.IncomeService;
 import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
-public class IncomTables  extends  AbstractTableModel{
+public class IncomTableModels extends  AbstractTableModel{
 
         String[] columnNames = new String[] { "收入分类ID", "收入分类名称"};
 

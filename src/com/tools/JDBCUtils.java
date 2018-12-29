@@ -13,15 +13,11 @@ import java.sql.*;
 
      public static Connection connection =null;
 
-
-
-
      public static Connection getConnection() throws SQLException{
              connection = DriverManager.getConnection(url,username,password);//返回一个数据库连接
          return connection;
 
      }
-
 
 
  }

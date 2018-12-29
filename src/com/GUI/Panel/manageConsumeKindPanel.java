@@ -1,11 +1,9 @@
 package com.GUI.Panel;
 
 import com.Entity.Consume;
-import com.Entity.Income;
 import com.GUI.Listener.incomekindListener;
-import com.GUI.Models.ConsumeTables;
+import com.GUI.Models.ConsumeTableModels;
 import com.Service.ConsumeService;
-import com.Service.IncomeService;
 import com.tools.guiUtils;
 
 import javax.swing.*;
@@ -24,7 +22,7 @@ public class manageConsumeKindPanel extends WorkingPanel {
     public JButton bDelete = new JButton("删除");
 
 
-    public ConsumeTables consumeTables = new ConsumeTables();//JTables模型用于管理JTables的数据
+    public ConsumeTableModels consumeTables = new ConsumeTableModels();//JTables模型用于管理JTables的数据
 
     public JTable table = new JTable(consumeTables);//用模型去注册表格
 

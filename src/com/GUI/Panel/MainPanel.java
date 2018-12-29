@@ -9,7 +9,6 @@ import java.awt.*;
 public class MainPanel extends WorkingPanel {
     static {
         guiUtils.SetUI();
-      //  guiUtils.initAllPanels();
 
     }
     public static MainPanel INSTANCE = new MainPanel();
@@ -23,24 +22,26 @@ public class MainPanel extends WorkingPanel {
     public   JMenu manageConsumeMenu = new JMenu("支出管理");
     public   JMenu incomeAndcomsumeViewMenu = new JMenu("财务状况");
 
+
     public   JMenuItem addPersonalInfor = new JMenuItem("信息变更");//子菜单
     public   JMenuItem modifyPassword = new JMenuItem("修改密码");
-
     public   JMenuItem manageIncome = new JMenuItem("开始管理收入分类");
     public   JMenuItem manageConsume = new JMenuItem("开始管理消费分类");
+
+    public   JMenuItem setAincome = new JMenuItem("记收入");
+    public   JMenuItem setAconsume = new JMenuItem("记支出");
+
+    public   JMenuItem recorderOfMonth = new JMenuItem("查看消费记录");
     public  static JPanel workingPanel ; //工作面板区
 
 
-
-    public  MainPanel(){
+    private   MainPanel(){
         DesignJmenuBar();
         this.setLayout(new BorderLayout());
         workingPanel = new ResetPanel(0.8);
         this.add(jMenuBar,BorderLayout.NORTH);
         this.add(workingPanel,BorderLayout.CENTER);
         addListener();
-
-
     }
 
     private void DesignJmenuBar(){
@@ -62,6 +63,10 @@ public class MainPanel extends WorkingPanel {
         manageIncomeKindMenu.add(manageIncome);
         manageConsumeKindMenu.add(manageConsume);
 
+        manageIncomeMenu.add(setAincome);
+        manageConsumeMenu.add(setAconsume);
+        incomeAndcomsumeViewMenu.add(recorderOfMonth);
+
     }
 
 
@@ -72,6 +77,8 @@ public class MainPanel extends WorkingPanel {
         modifyPassword.addActionListener(mainPanelListener);//
         manageIncome.addActionListener(mainPanelListener);
         manageConsume.addActionListener(mainPanelListener);
+        setAincome.addActionListener(mainPanelListener);
+        setAconsume.addActionListener(mainPanelListener);
 
     }
 

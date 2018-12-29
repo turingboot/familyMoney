@@ -6,7 +6,7 @@ import com.Service.ConsumeService;
 import javax.swing.table.AbstractTableModel;
 import java.util.List;
 
-public class ConsumeTables  extends AbstractTableModel {
+public class ConsumeTableModels extends AbstractTableModel {
 
     String[] columnNames = new String[] { "消费分类ID", "消费名称"};
 

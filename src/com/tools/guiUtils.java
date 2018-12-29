@@ -47,11 +47,5 @@ public class guiUtils {
             return false;
     }
 
-    public static void initAllPanels(){
-        updatePersonInforPanel updatePersonInforPanel = com.GUI.Panel.updatePersonInforPanel.INSTANCE;
-        updatePasswordPanel updatePasswordPanel = com.GUI.Panel.updatePasswordPanel.INSTANCE;
-
-    }
-
 
 }

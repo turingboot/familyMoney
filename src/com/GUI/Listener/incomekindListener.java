@@ -11,12 +11,10 @@ public class incomekindListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
             manageIncomeKindPanel  p = manageIncomeKindPanel.INSTANCE;//获取工作面板
-
-            JButton b = (JButton) e.getSource();
+            JButton b = (JButton) e.getSource(); //判断事件来源
 
            if (b == p.bAdd) {
                System.out.println("添加");
-
 
                 }
 
