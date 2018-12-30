@@ -21,4 +21,26 @@ public class IncomeService {
         }
         return list;
     }
+
+    public boolean addIncome(String id,String name){
+        Income income = new Income(id,name);
+        if(incomeDAO.add(income))
+            return true;
+        else
+            return false;
+
+    }
+
+    public  boolean updateIncome(String id ,String name){
+        if (incomeDAO.upDate(id,name))
+            return true;
+        else return false;
+    }
+
+
+    public String getExitsID(String name){
+
+        return incomeDAO.selectInfor(name,"incomeID");
+
+    }
 }

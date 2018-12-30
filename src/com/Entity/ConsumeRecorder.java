@@ -9,8 +9,7 @@ public  class ConsumeRecorder {
     private double Cost;
     private Date date;
 
-    public ConsumeRecorder(String recordID, String userID, String consumeID, double cost, Date date) {
-        this.recordID = recordID;
+    public ConsumeRecorder(String userID, String consumeID, double cost, Date date) { ;
         UserID = userID;
         ConsumeID = consumeID;
         Cost = cost;

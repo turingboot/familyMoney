@@ -15,6 +15,7 @@ import java.sql.*;
 
      public static Connection getConnection() throws SQLException{
              connection = DriverManager.getConnection(url,username,password);//返回一个数据库连接
+             System.out.println("ip："+ip+"已连接");
          return connection;
 
      }

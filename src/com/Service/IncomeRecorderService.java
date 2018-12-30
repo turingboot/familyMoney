@@ -1,18 +1,21 @@
 package com.Service;
 
 import com.DAO.IncomeRecorderDAO;
-import com.Entity.Income;
 import com.Entity.IncomeRecorder;
 import java.util.Date;
+
 public class IncomeRecorderService {
 
     IncomeRecorderDAO recordDao = new IncomeRecorderDAO();
-//    public void add(int spend, Income c, String comment, Date date){
-//        Record r = new Record();
-//        r.spend = spend;
-//        r.cid = c.id;
-//        r.comment = comment;
-//        r.date = date;
-//        recordDao.add(r);
-//    }
+
+    public boolean addIncomeRecorder(String name,String incomeName,double amount,Date date){
+
+         String uid = new UserService().getExitsID(name);
+         String incomeID = new IncomeService().getExitsID(incomeName);
+         IncomeRecorder incomeRecorder = new IncomeRecorder(uid,incomeID,amount,date);
+         System.out.println(uid+"  "+incomeID+"  "+amount+" "+date);
+         if(recordDao.add(incomeRecorder))
+             return true;
+         else return false;
+    }
 }

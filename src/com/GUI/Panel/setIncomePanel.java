@@ -1,12 +1,15 @@
 package com.GUI.Panel;
 
-import com.GUI.Models.IncomeComBoxModel;
-import com.Service.IncomeService;
-import com.tools.guiUtils;
-import org.jdesktop.swingx.JXDatePicker;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Date;
+import com.GUI.Models.IncomeComBoxModel;
+import com.Service.IncomeService;
+import com.Service.UserService;
+import com.tools.guiUtils;
+import com.GUI.Listener.setIncomeListener;
+import org.jdesktop.swingx.JXDatePicker;
 
 public class setIncomePanel extends WorkingPanel {
 
@@ -24,7 +27,7 @@ public class setIncomePanel extends WorkingPanel {
     public JTextField inAmount = new JTextField();
     public IncomeComBoxModel incomeComBoxModel = new IncomeComBoxModel();
     public JComboBox<String> incomeComBox = new JComboBox<String>(incomeComBoxModel);
-    final JXDatePicker datePicker = new JXDatePicker( new Date());
+    public  JXDatePicker datePicker = new JXDatePicker( new Date());
 
     public JButton pButton = new JButton("提交");
 
@@ -37,6 +40,7 @@ public class setIncomePanel extends WorkingPanel {
         pButton.setPreferredSize(new Dimension(50,30));
         this.add(setN(),BorderLayout.NORTH);
         this.add(jPanel,BorderLayout.CENTER);
+        addListener();
 
     }
 
@@ -58,6 +62,8 @@ public class setIncomePanel extends WorkingPanel {
 
     @Override
     public void addListener() {
+        setIncomeListener listener = new setIncomeListener();
+        pButton.addActionListener(listener);
 
     }
 
@@ -65,11 +71,17 @@ public class setIncomePanel extends WorkingPanel {
     public void updateData() {
         incomeComBox.updateUI();
         ResetUI();
-        //  inAmount.grabFocus();//获得光标
     }
 
-
+    public String getSelectedIncome() {//返回模型列表中的某个Income对象
+        int index = incomeComBox.getSelectedIndex();
+        return incomeComBoxModel.ItemList.get(index);
+    }
     private void ResetUI(){
+
+        if((null!=MainPanel.INSTANCE)&&(!MainPanel.whologin.equals("")))
+        { String name = new UserService().getExitsName(MainPanel.whologin);//获取当前登录者的部分信息
+            inName.setText(name);}
         inAmount.setText("0");
         incomeComBoxModel.ItemList=new IncomeService().listName();//刷新组合框数据列表
         if(0!=incomeComBoxModel.ItemList.size())

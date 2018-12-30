@@ -1,19 +1,19 @@
 package com.Entity;
 
+import java.util.Date;
 public class IncomeRecorder {
     private String RecordID;
     private String UserID;
     private String IncomeID;
     private double IncomeAmount;
-    private java.util.Date Date;
+    private Date date;
 
-    public IncomeRecorder(String recordID, String userID, String incomeID, double incomeAmount, java.util.Date date) {
+    public IncomeRecorder(String userID, String incomeID, double incomeAmount, Date date) {
         super();
-        RecordID = recordID;
         UserID = userID;
         IncomeID = incomeID;
         IncomeAmount = incomeAmount;
-        Date = date;
+         this.date= date;
     }
     public String getRecordID() {
         return RecordID;
@@ -39,11 +39,11 @@ public class IncomeRecorder {
     public void setIncomeAmount(double incomeAmount) {
         IncomeAmount = incomeAmount;
     }
-    public java.util.Date getDate() {
-        return Date;
+    public Date getDate() {
+        return date;
     }
     public void setDate(java.util.Date date) {
-        Date = date;
+        this.date = date;
     }
 
 }

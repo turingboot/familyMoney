@@ -15,29 +15,21 @@ public class manageIncomeKindPanel extends WorkingPanel { //收入分类管理�
 
     public static manageIncomeKindPanel INSTANCE = new manageIncomeKindPanel();
 
-
     public JButton bAdd = new JButton("新增");
     public JButton bEdit = new JButton("修改");
     public JButton bDelete = new JButton("删除");
- //   String columNames[] = new String[]{"分类名称", "消费次数"};
-
     public IncomTableModels incomTables = new IncomTableModels();//JTables模型用于管理JTables的数据
-
     public JTable table = new JTable(incomTables);//用模型去注册表格
 
     private manageIncomeKindPanel() {
-
-
-        JScrollPane sp = new JScrollPane(table);//放表格的视图
+        JScrollPane sp = new JScrollPane(table);//放表格的视图,提供可滚动显示的页面
         JPanel pSubmit = new JPanel();
         pSubmit.add(bAdd);//按钮放置在一个面板中
         pSubmit.add(bEdit);
         pSubmit.add(bDelete);
-
         this.setLayout(new BorderLayout());
         this.add(sp, BorderLayout.CENTER);//表格放置在该工作面板的北面
         this.add(pSubmit, BorderLayout.SOUTH);
-
         addListener();
     }
 
@@ -59,7 +51,7 @@ public class manageIncomeKindPanel extends WorkingPanel { //收入分类管理�
         }
         else{
             bEdit.setEnabled(true);
-            bDelete.setEnabled(true);
+            bDelete.setEnabled(false);//设置删除功能不可用
         }
     }
 

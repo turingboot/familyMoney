@@ -1,11 +1,12 @@
 package com.GUI.Panel;
 
-import com.Entity.Consume;
+
 import com.GUI.Models.ConsumeComBoxModel;
 import com.Service.ConsumeService;
+import com.Service.UserService;
 import com.tools.guiUtils;
 import org.jdesktop.swingx.JXDatePicker;
-import org.omg.CORBA.PUBLIC_MEMBER;
+import com.GUI.Listener.setConsumeListener;
 
 import javax.swing.*;
 import java.awt.*;
@@ -26,19 +27,18 @@ public class setConsumePanel extends WorkingPanel {
     public JTextField inAmount = new JTextField();
     public ConsumeComBoxModel consumeComBoxModel = new ConsumeComBoxModel();
     public JComboBox<String> consumeComBox = new JComboBox<String>(consumeComBoxModel);
-    final JXDatePicker datePicker = new JXDatePicker( new Date());
+    public JXDatePicker datePicker = new JXDatePicker( new Date());
 
     public JButton pButton = new JButton("提交");
 
     private setConsumePanel(){
         setLayout(new BorderLayout());
-
-        JPanel jPanel = new JPanel();
-
+        JPanel jPanel = new JPanel();//装提交按钮的工作面板
         jPanel.add(pButton,BorderLayout.SOUTH);
         pButton.setPreferredSize(new Dimension(50,30));
         this.add(setN(),BorderLayout.NORTH);
         this.add(jPanel,BorderLayout.CENTER);
+        addListener();
 
     }
 
@@ -53,14 +53,14 @@ public class setConsumePanel extends WorkingPanel {
         jPanel.add(datePicker);
         jPanel.add(amount);
         jPanel.add(inAmount);
-
         return jPanel;
     }
 
 
     @Override
     public void addListener() {
-
+      setConsumeListener listener =new setConsumeListener();
+      pButton.addActionListener(listener);
     }
 
     @Override
@@ -71,10 +71,18 @@ public class setConsumePanel extends WorkingPanel {
         ResetUI();
       //  inAmount.grabFocus();//获得光标
     }
-
+    public String getSelectedIncome() {//返回模型列表中的某个Income对象
+        int index = consumeComBox.getSelectedIndex();
+        return consumeComBoxModel.ItemList.get(index);
+    }
 
     private void ResetUI(){
-        inAmount.setText("0");
+
+        if((null!=MainPanel.INSTANCE)&&(!MainPanel.whologin.equals("")))
+        { String name = new UserService().getExitsName(MainPanel.whologin);//获取当前登录者的部分信息
+            inName.setText(name);}
+
+      inAmount.setText("0");
         consumeComBoxModel.ItemList=new ConsumeService().listName();//刷新组合框数据列表
         if(0!=consumeComBoxModel.ItemList.size())
             consumeComBox.setSelectedIndex(0);

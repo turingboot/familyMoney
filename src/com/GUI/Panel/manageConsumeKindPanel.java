@@ -1,7 +1,7 @@
 package com.GUI.Panel;
 
 import com.Entity.Consume;
-import com.GUI.Listener.incomekindListener;
+import com.GUI.Listener.consumeKindListener;
 import com.GUI.Models.ConsumeTableModels;
 import com.Service.ConsumeService;
 import com.tools.guiUtils;
@@ -60,20 +60,19 @@ public class manageConsumeKindPanel extends WorkingPanel {
         }
         else{
             bEdit.setEnabled(true);
-            bDelete.setEnabled(true);
+            bDelete.setEnabled(false);//设置删除按钮不可用
         }
 
     }
 
     @Override
     public void addListener() {
-        incomekindListener listener = new incomekindListener();
+        consumeKindListener listener  = new consumeKindListener();
         bAdd.addActionListener(listener);
         bEdit.addActionListener(listener);
         bDelete.addActionListener(listener);
 
     }
-
 
 
 }

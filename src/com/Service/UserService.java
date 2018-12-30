@@ -20,9 +20,7 @@ public class UserService {
 
           if(userDAO.selectInfor(id,"UserPassword").equals(password))
               return true;
-
           else
-
               return false;
     }
 
@@ -30,6 +28,12 @@ public class UserService {
     public String getExitsName(String id){
 
         return userDAO.selectInfor(id,"UserName");
+
+    }
+
+    public String getExitsID(String name){
+
+        return userDAO.selectInfor(name,"UserID");
 
     }
 
